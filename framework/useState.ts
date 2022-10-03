@@ -1,4 +1,4 @@
-import renderAll from "./index";
+import renderAll from "../index";
 
 const state: Array<[value: any, setValue: (val: any) => void]> = [];
 let counter = 0;

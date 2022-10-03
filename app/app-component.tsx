@@ -1,9 +1,9 @@
-import h from "./h"
-import useState from "./useState"
+import useState from "../framework/useState"
 import TodoItemComponent from "./todo-item-component";
 import TodoItemModel from "./todo-item-model";
+import h from "../framework/h";
 
-function MyComponent() {
+function AppComponent() {
 
     let [text, setText] = useState("");
 
@@ -55,4 +55,4 @@ function MyComponent() {
     );
   }
   
-  export default MyComponent;
+  export default AppComponent;
