@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "lib": [
+            "ES2019",
+            "dom"
+        ],
+        "sourceMap": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "todo",
+        "noImplicitReturns": true,
+        "strict": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noImplicitAny": true
+    }
+}
