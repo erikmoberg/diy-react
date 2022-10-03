@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "serve",
-    "build": "esbuild index.ts --bundle --outdir=dist --watch",
-    "esbuild": "esbuild"
+    "build": "esbuild index.ts --bundle --outdir=dist --watch"
   },
   "author": "",
   "license": "ISC",
