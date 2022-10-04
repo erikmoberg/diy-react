@@ -17,7 +17,12 @@ function AppComponent() {
          setText(e.target.value);
     }
 
-    function submitTextHandler() {
+    function submitTextHandler(e: React.ChangeEvent<HTMLFormElement>) {
+        e.preventDefault();
+        if (!text) {
+            return;
+        }
+
         setTodos([...todos, { title: text, isDone: false, key: Math.random().toString() } ]);
         setText("");
     }

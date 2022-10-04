@@ -4,13 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "serve",
-    "build": "esbuild index.ts --bundle --outdir=dist --watch"
+    "serve": "esbuild index.ts --bundle --outdir=dist --servedir=/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serve": "^14.0.1",
     "esbuild": "0.15.10",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6"
