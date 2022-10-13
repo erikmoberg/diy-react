@@ -1,4 +1,4 @@
-function render(jsxElement: JSX.Element) : Node {
+export function render(jsxElement: JSX.Element) : Node {
 
     const element: HTMLElement = document.createElement(jsxElement.type);
 
@@ -26,5 +26,3 @@ function render(jsxElement: JSX.Element) : Node {
 
     return element;
 }
-
-export default render;

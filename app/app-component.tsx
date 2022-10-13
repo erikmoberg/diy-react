@@ -1,16 +1,17 @@
 import { useState } from "../framework/useState"
-import TodoItemComponent from "./todo-item-component";
-import TodoItemModel from "./todo-item-model";
-import h from "../framework/h";
+import { TodoItemComponent } from "./todo-item-component";
+import { TodoItemModel } from "./todo-item-model";
+import { h } from "../framework/h";
 
 export function AppComponent() {
 
     let [text, setText] = useState("");
 
     let [todos, setTodos] = useState<Array<TodoItemModel>>([ 
-        { title: "Granular updates", isDone: false, key: "test1" },
-        { title: "Scoped CSS", isDone: false, key: "test2" },
-        { title: "Add SVG", isDone: false, key: "test3" }
+        { title: "Fix buggy state handling", isDone: false, key: "test1" },
+        { title: "Granular updates", isDone: false, key: "test2" },
+        { title: "Scoped CSS", isDone: false, key: "test3" },
+        { title: "Add SVG", isDone: false, key: "test4" }
     ]);
 
     function textChanged(e: React.ChangeEvent<HTMLInputElement>) {

@@ -1,7 +1,7 @@
-import h from "../framework/h"
-import TodoItemModel from "./todo-item-model";
+import { h } from "../framework/h"
+import { TodoItemModel } from "./todo-item-model";
 
-function TodoItemComponent(
+export function TodoItemComponent(
     {todo, handleRemove, handleToggleDone} 
     : { todo: TodoItemModel, handleRemove: (todo: TodoItemModel) => void, handleToggleDone: (todo: TodoItemModel) => void }) {
 
@@ -12,6 +12,4 @@ function TodoItemComponent(
             <button onClick={() => handleRemove(todo)}>Remove</button>
         </div>
     );
-  }
-  
-  export default TodoItemComponent;
+}

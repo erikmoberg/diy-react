@@ -1,4 +1,4 @@
-function h(
+export function h(
     type: string | Function, 
     props: any, 
     ...children: Array<any>) : JSX.Element {
@@ -46,5 +46,3 @@ function h(
         type: type,
     };
 }
-
-export default h;

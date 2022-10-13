@@ -1,4 +1,4 @@
-import render from "./render"
+import { render } from "./render"
 
 let globalRoot: HTMLElement;
 let globalBaseComponent: () => JSX.Element;
